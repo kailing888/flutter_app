@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widget/ButtonPage.dart';
 import 'package:flutter_app/widget/TextWidget.dart';
 
 void main() {
@@ -38,16 +39,21 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          RaisedButton(
-            child: Text("Text"),
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return TextPage();
-              }));
-            },
-          ),
+          buildButton('Text', TextPage()),
+          buildButton('Button', ButtonPage()),
         ],
       ),
+    );
+  }
+
+  Widget buildButton(String title, Widget widget) {
+    return RaisedButton(
+      child: Text(title),
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+          return widget;
+        }));
+      },
     );
   }
 }
