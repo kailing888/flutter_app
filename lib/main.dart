@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/widget/ButtonPage.dart';
 import 'package:flutter_app/widget/ImagePage.dart';
 import 'package:flutter_app/widget/SwitchPage.dart';
+import 'package:flutter_app/widget/TextFieldPage.dart';
 import 'package:flutter_app/widget/TextWidget.dart';
 
 void main() {
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Button', ButtonPage()),
           buildButton('Image', ImagePage()),
           buildButton('Switch', SwitchPage()),
+          buildButton('TextField', TextFieldPage()),
         ],
       ),
     );
