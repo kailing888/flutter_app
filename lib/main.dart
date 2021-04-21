@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widget/ButtonPage.dart';
+import 'package:flutter_app/widget/ImagePage.dart';
 import 'package:flutter_app/widget/TextWidget.dart';
 
 void main() {
@@ -41,6 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           buildButton('Text', TextPage()),
           buildButton('Button', ButtonPage()),
+          buildButton('Image', ImagePage()),
         ],
       ),
     );
