@@ -7,6 +7,7 @@ import 'package:flutter_app/widget/ProgressIndicatorPage.dart';
 import 'package:flutter_app/widget/SwitchPage.dart';
 import 'package:flutter_app/widget/TextFieldPage.dart';
 import 'package:flutter_app/widget/TextWidget.dart';
+import 'package:flutter_app/widget/WrapPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -53,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('ProgressIndicator', ProgressIndicatorPage()),
           buildButton('Column', ColumnPage()),
           buildButton('Flex', FlexPage()),
+          buildButton('Wrap', WrapPage()),
         ],
       ),
     );
