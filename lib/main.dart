@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widget/AlignPage.dart';
 import 'package:flutter_app/widget/ButtonPage.dart';
 import 'package:flutter_app/widget/ColumnPage.dart';
 import 'package:flutter_app/widget/FlexPage.dart';
@@ -57,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Flex', FlexPage()),
           buildButton('Wrap', WrapPage()),
           buildButton('Stack', StackPage()),
+          buildButton('Align', AlignPage()),
         ],
       ),
     );
