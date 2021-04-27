@@ -10,6 +10,7 @@ import 'package:flutter_app/widget/SwitchPage.dart';
 import 'package:flutter_app/widget/TextFieldPage.dart';
 import 'package:flutter_app/widget/TextWidget.dart';
 import 'package:flutter_app/widget/WrapPage.dart';
+import 'package:flutter_app/widget/scroll/ScrollBarPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -59,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Wrap', WrapPage()),
           buildButton('Stack', StackPage()),
           buildButton('Align', AlignPage()),
+          buildButton('ScrollBar', ScrollBarPage()),
         ],
       ),
     );
