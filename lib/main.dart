@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/widget/AlignPage.dart';
 import 'package:flutter_app/widget/ButtonPage.dart';
 import 'package:flutter_app/widget/ColumnPage.dart';
+import 'package:flutter_app/widget/DecorationPage.dart';
 import 'package:flutter_app/widget/FlexPage.dart';
 import 'package:flutter_app/widget/ImagePage.dart';
 import 'package:flutter_app/widget/ProgressIndicatorPage.dart';
@@ -63,6 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Align', AlignPage()),
           buildButton('ScrollBar', ScrollBarPage()),
           buildButton('Size', SizePage()),
+          buildButton('Decoration', DecorationPage()),
         ],
       ),
     );
