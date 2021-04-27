@@ -7,6 +7,7 @@ import 'package:flutter_app/widget/DecorationPage.dart';
 import 'package:flutter_app/widget/FlexPage.dart';
 import 'package:flutter_app/widget/ImagePage.dart';
 import 'package:flutter_app/widget/ProgressIndicatorPage.dart';
+import 'package:flutter_app/widget/ScaffoldPage.dart';
 import 'package:flutter_app/widget/SizePage.dart';
 import 'package:flutter_app/widget/StackPage.dart';
 import 'package:flutter_app/widget/SwitchPage.dart';
@@ -53,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          buildButton('Scaffold', ScaffoldPage()),
           buildButton('Container', ContainerPage()),
           buildButton('Transform', TransformPage()),
           buildButton('Text', TextPage()),
