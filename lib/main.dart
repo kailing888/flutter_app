@@ -11,6 +11,7 @@ import 'package:flutter_app/widget/StackPage.dart';
 import 'package:flutter_app/widget/SwitchPage.dart';
 import 'package:flutter_app/widget/TextFieldPage.dart';
 import 'package:flutter_app/widget/TextWidget.dart';
+import 'package:flutter_app/widget/TransformPage.dart';
 import 'package:flutter_app/widget/WrapPage.dart';
 import 'package:flutter_app/widget/scroll/ScrollBarPage.dart';
 
@@ -51,6 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          buildButton('Transform', TransformPage()),
           buildButton('Text', TextPage()),
           buildButton('Button', ButtonPage()),
           buildButton('Image', ImagePage()),
