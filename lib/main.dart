@@ -5,6 +5,7 @@ import 'package:flutter_app/widget/ColumnPage.dart';
 import 'package:flutter_app/widget/FlexPage.dart';
 import 'package:flutter_app/widget/ImagePage.dart';
 import 'package:flutter_app/widget/ProgressIndicatorPage.dart';
+import 'package:flutter_app/widget/SizePage.dart';
 import 'package:flutter_app/widget/StackPage.dart';
 import 'package:flutter_app/widget/SwitchPage.dart';
 import 'package:flutter_app/widget/TextFieldPage.dart';
@@ -61,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Stack', StackPage()),
           buildButton('Align', AlignPage()),
           buildButton('ScrollBar', ScrollBarPage()),
+          buildButton('Size', SizePage()),
         ],
       ),
     );
