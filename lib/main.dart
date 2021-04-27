@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widget/AlignPage.dart';
 import 'package:flutter_app/widget/ButtonPage.dart';
+import 'package:flutter_app/widget/ClipPage.dart';
 import 'package:flutter_app/widget/ColumnPage.dart';
 import 'package:flutter_app/widget/ContainerPage.dart';
 import 'package:flutter_app/widget/DecorationPage.dart';
@@ -54,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          buildButton('Clip', ClipPage()),
           buildButton('Scaffold', ScaffoldPage()),
           buildButton('Container', ContainerPage()),
           buildButton('Transform', TransformPage()),
