@@ -16,7 +16,12 @@ import 'package:flutter_app/widget/TextFieldPage.dart';
 import 'package:flutter_app/widget/TextWidget.dart';
 import 'package:flutter_app/widget/TransformPage.dart';
 import 'package:flutter_app/widget/WrapPage.dart';
+import 'package:flutter_app/widget/scroll/CustomScrollPage.dart';
+import 'package:flutter_app/widget/scroll/GridViewPage.dart';
+import 'package:flutter_app/widget/scroll/ListViewPage.dart';
+import 'package:flutter_app/widget/scroll/NotificationListenerPage.dart';
 import 'package:flutter_app/widget/scroll/ScrollBarPage.dart';
+import 'package:flutter_app/widget/scroll/ScrollControllerPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -52,13 +57,12 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: GridView.count(
+        crossAxisCount: 3,
+        childAspectRatio: 2.5,
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 10,
         children: <Widget>[
-          buildButton('Clip', ClipPage()),
-          buildButton('Scaffold', ScaffoldPage()),
-          buildButton('Container', ContainerPage()),
-          buildButton('Transform', TransformPage()),
           buildButton('Text', TextPage()),
           buildButton('Button', ButtonPage()),
           buildButton('Image', ImagePage()),
@@ -73,6 +77,15 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('ScrollBar', ScrollBarPage()),
           buildButton('Size', SizePage()),
           buildButton('Decoration', DecorationPage()),
+          buildButton('Transform', TransformPage()),
+          buildButton('Container', ContainerPage()),
+          buildButton('Scaffold', ScaffoldPage()),
+          buildButton('Clip', ClipPage()),
+          buildButton('ListView', ListViewPage()),
+          buildButton('GridView', GridViewPage()),
+          buildButton('Sliver', CustomScrollPage()),
+          buildButton('ScrollController', ScrollControllerPage()),
+          buildButton('NotificationListener', NotificationListenerPage()),
         ],
       ),
     );
