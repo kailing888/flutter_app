@@ -16,6 +16,13 @@ import 'package:flutter_app/widget/TextFieldPage.dart';
 import 'package:flutter_app/widget/TextWidget.dart';
 import 'package:flutter_app/widget/TransformPage.dart';
 import 'package:flutter_app/widget/WrapPage.dart';
+import 'package:flutter_app/widget/function/AsyncPage.dart';
+import 'package:flutter_app/widget/function/ColorThemePage.dart';
+import 'package:flutter_app/widget/function/DialogPage.dart';
+import 'package:flutter_app/widget/function/InheritedPage.dart';
+import 'package:flutter_app/widget/function/ProviderPage.dart';
+import 'package:flutter_app/widget/function/StatePage.dart';
+import 'package:flutter_app/widget/function/WillPopPage.dart';
 import 'package:flutter_app/widget/scroll/CustomScrollPage.dart';
 import 'package:flutter_app/widget/scroll/GridViewPage.dart';
 import 'package:flutter_app/widget/scroll/ListViewPage.dart';
@@ -86,6 +93,13 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Sliver', CustomScrollPage()),
           buildButton('ScrollController', ScrollControllerPage()),
           buildButton('NotificationListener', NotificationListenerPage()),
+          buildButton('WillPop', WillPopPage()),
+          buildButton('Inherited', InheritedPage()),
+          buildButton('Provider', ProviderPage()),
+          buildButton('ColorTheme', ColorThemePage()),
+          buildButton('Async', AsyncPage()),
+          buildButton('DialogPage', DialogPage()),
+          buildButton('StatePage', StatePage()),
         ],
       ),
     );
