@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widget/AlignPage.dart';
 import 'package:flutter_app/widget/ButtonPage.dart';
@@ -23,6 +25,10 @@ import 'package:flutter_app/widget/function/InheritedPage.dart';
 import 'package:flutter_app/widget/function/ProviderPage.dart';
 import 'package:flutter_app/widget/function/StatePage.dart';
 import 'package:flutter_app/widget/function/WillPopPage.dart';
+import 'package:flutter_app/widget/pointer/EventBusPage.dart';
+import 'package:flutter_app/widget/pointer/GesturePage.dart';
+import 'package:flutter_app/widget/pointer/NotificationPage.dart';
+import 'package:flutter_app/widget/pointer/PointerPage.dart';
 import 'package:flutter_app/widget/scroll/CustomScrollPage.dart';
 import 'package:flutter_app/widget/scroll/GridViewPage.dart';
 import 'package:flutter_app/widget/scroll/ListViewPage.dart';
@@ -100,6 +106,10 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Async', AsyncPage()),
           buildButton('DialogPage', DialogPage()),
           buildButton('StatePage', StatePage()),
+          buildButton('Pointer', PointerPage()),
+          buildButton('Gesture', GesturePage()),
+          buildButton('EventBus', EventBusPage()),
+          buildButton('Notification', NotificationPage()),
         ],
       ),
     );
