@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widget/AlignPage.dart';
 import 'package:flutter_app/widget/ButtonPage.dart';
@@ -18,6 +16,12 @@ import 'package:flutter_app/widget/TextFieldPage.dart';
 import 'package:flutter_app/widget/TextWidget.dart';
 import 'package:flutter_app/widget/TransformPage.dart';
 import 'package:flutter_app/widget/WrapPage.dart';
+import 'package:flutter_app/widget/animation/AnimatedSwitcherPage.dart';
+import 'package:flutter_app/widget/animation/AnimationPage.dart';
+import 'package:flutter_app/widget/animation/HeroAnimationPage.dart';
+import 'package:flutter_app/widget/animation/RouteAnimation.dart';
+import 'package:flutter_app/widget/animation/StaggerPage.dart';
+import 'package:flutter_app/widget/animation/TransitionAnimationPage.dart';
 import 'package:flutter_app/widget/function/AsyncPage.dart';
 import 'package:flutter_app/widget/function/ColorThemePage.dart';
 import 'package:flutter_app/widget/function/DialogPage.dart';
@@ -110,6 +114,12 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Gesture', GesturePage()),
           buildButton('EventBus', EventBusPage()),
           buildButton('Notification', NotificationPage()),
+          buildButton('Animation', AnimationPage()),
+          buildButton('RouteAnimation', RouteAnimationPage()),
+          buildButton('Hero', HeroAnimationPage()),
+          buildButton('Stagger', StaggerPage()),
+          buildButton('AnimatedSwitcher', AnimatedSwitcherPage()),
+          buildButton('TransitionAnimation', TransitionAnimationPage()),
         ],
       ),
     );
