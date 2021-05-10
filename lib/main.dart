@@ -26,6 +26,7 @@ import 'package:flutter_app/widget/custom/AssemblePage.dart';
 import 'package:flutter_app/widget/custom/CustomPaintAndCanvasPage.dart';
 import 'package:flutter_app/widget/custom/GradientCircularProgressPage.dart';
 import 'package:flutter_app/widget/custom/TurnPage.dart';
+import 'package:flutter_app/widget/fileandnet/DioPage.dart';
 import 'package:flutter_app/widget/fileandnet/FilePage.dart';
 import 'package:flutter_app/widget/fileandnet/OriginHttpPage.dart';
 import 'package:flutter_app/widget/function/AsyncPage.dart';
@@ -133,6 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'GradientCircularProgress', GradientCircularProgressPage()),
           buildButton('file', FileOperationRoute()),
           buildButton('OriginHttp', OriginHttpPage()),
+          buildButton('Dio', DioPage()),
         ],
       ),
     );
