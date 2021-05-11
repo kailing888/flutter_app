@@ -29,6 +29,7 @@ import 'package:flutter_app/widget/custom/TurnPage.dart';
 import 'package:flutter_app/widget/fileandnet/DioPage.dart';
 import 'package:flutter_app/widget/fileandnet/FilePage.dart';
 import 'package:flutter_app/widget/fileandnet/OriginHttpPage.dart';
+import 'package:flutter_app/widget/fileandnet/SocketApiPage.dart';
 import 'package:flutter_app/widget/function/AsyncPage.dart';
 import 'package:flutter_app/widget/function/ColorThemePage.dart';
 import 'package:flutter_app/widget/function/DialogPage.dart';
@@ -135,6 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('file', FileOperationRoute()),
           buildButton('OriginHttp', OriginHttpPage()),
           buildButton('Dio', DioPage()),
+          buildButton('Socket', SocketApiPage()),
         ],
       ),
     );
