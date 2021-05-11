@@ -28,6 +28,7 @@ import 'package:flutter_app/widget/custom/GradientCircularProgressPage.dart';
 import 'package:flutter_app/widget/custom/TurnPage.dart';
 import 'package:flutter_app/widget/fileandnet/DioPage.dart';
 import 'package:flutter_app/widget/fileandnet/FilePage.dart';
+import 'package:flutter_app/widget/fileandnet/JsonPage.dart';
 import 'package:flutter_app/widget/fileandnet/OriginHttpPage.dart';
 import 'package:flutter_app/widget/fileandnet/SocketApiPage.dart';
 import 'package:flutter_app/widget/function/AsyncPage.dart';
@@ -137,6 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('OriginHttp', OriginHttpPage()),
           buildButton('Dio', DioPage()),
           buildButton('Socket', SocketApiPage()),
+          buildButton('Json', JsonPage()),
         ],
       ),
     );
