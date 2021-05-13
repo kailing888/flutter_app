@@ -1,3 +1,4 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widget/AlignPage.dart';
 import 'package:flutter_app/widget/ButtonPage.dart';
@@ -39,6 +40,7 @@ import 'package:flutter_app/widget/function/ProviderPage.dart';
 import 'package:flutter_app/widget/function/StatePage.dart';
 import 'package:flutter_app/widget/function/WillPopPage.dart';
 import 'package:flutter_app/widget/packageandplugin/ChannelPage.dart';
+import 'package:flutter_app/widget/packageandplugin/TexturePage.dart';
 import 'package:flutter_app/widget/pointer/EventBusPage.dart';
 import 'package:flutter_app/widget/pointer/GesturePage.dart';
 import 'package:flutter_app/widget/pointer/NotificationPage.dart';
@@ -50,11 +52,13 @@ import 'package:flutter_app/widget/scroll/NotificationListenerPage.dart';
 import 'package:flutter_app/widget/scroll/ScrollBarPage.dart';
 import 'package:flutter_app/widget/scroll/ScrollControllerPage.dart';
 
-void main() {
+void main() async {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  static List<CameraDescription> cameras;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -78,6 +82,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  @override
+  void initState() {
+    super.initState();
+    // getCamera();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,6 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Socket', SocketApiPage()),
           buildButton('Json', JsonPage()),
           buildButton('channel', ChannelPage()),
+          buildButton('Texture', TexturePage()),
         ],
       ),
     );
@@ -155,5 +166,11 @@ class _MyHomePageState extends State<MyHomePage> {
         }));
       },
     );
+  }
+
+  void getCamera() async {
+    if (MyApp.cameras == null) {
+      MyApp.cameras = await availableCameras();
+    }
   }
 }
