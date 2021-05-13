@@ -50,4 +50,9 @@ public class MainActivity extends FlutterActivity {
 
         return batteryLevel;
     }
+
+    public static void registerWith(Registrar registrar) {
+        registrar.platformViewRegistry().registerViewFactory("webview",
+                WebViewFactory(registrar.messenger()));
+    }
 }

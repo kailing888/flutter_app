@@ -41,6 +41,7 @@ import 'package:flutter_app/widget/function/StatePage.dart';
 import 'package:flutter_app/widget/function/WillPopPage.dart';
 import 'package:flutter_app/widget/packageandplugin/ChannelPage.dart';
 import 'package:flutter_app/widget/packageandplugin/TexturePage.dart';
+import 'package:flutter_app/widget/packageandplugin/WebViewPage.dart';
 import 'package:flutter_app/widget/pointer/EventBusPage.dart';
 import 'package:flutter_app/widget/pointer/GesturePage.dart';
 import 'package:flutter_app/widget/pointer/NotificationPage.dart';
@@ -152,6 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Json', JsonPage()),
           buildButton('channel', ChannelPage()),
           buildButton('Texture', TexturePage()),
+          buildButton('WebView', WebViewPage()),
         ],
       ),
     );
