@@ -38,6 +38,7 @@ import 'package:flutter_app/widget/function/InheritedPage.dart';
 import 'package:flutter_app/widget/function/ProviderPage.dart';
 import 'package:flutter_app/widget/function/StatePage.dart';
 import 'package:flutter_app/widget/function/WillPopPage.dart';
+import 'package:flutter_app/widget/packageandplugin/ChannelPage.dart';
 import 'package:flutter_app/widget/pointer/EventBusPage.dart';
 import 'package:flutter_app/widget/pointer/GesturePage.dart';
 import 'package:flutter_app/widget/pointer/NotificationPage.dart';
@@ -139,6 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton('Dio', DioPage()),
           buildButton('Socket', SocketApiPage()),
           buildButton('Json', JsonPage()),
+          buildButton('channel', ChannelPage()),
         ],
       ),
     );
