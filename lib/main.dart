@@ -36,6 +36,7 @@ import 'package:flutter_app/widget/function/AsyncPage.dart';
 import 'package:flutter_app/widget/function/ColorThemePage.dart';
 import 'package:flutter_app/widget/function/DialogPage.dart';
 import 'package:flutter_app/widget/function/InheritedPage.dart';
+import 'package:flutter_app/widget/function/provider/Provider2Page.dart';
 import 'package:flutter_app/widget/function/ProviderPage.dart';
 import 'package:flutter_app/widget/function/StatePage.dart';
 import 'package:flutter_app/widget/function/WillPopPage.dart';
@@ -100,6 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisSpacing: 10,
         crossAxisSpacing: 10,
         children: <Widget>[
+          buildButton('provider2', Provider2Page()),
           buildButton('Text', TextPage()),
           buildButton('Button', ButtonPage()),
           buildButton('Image', ImagePage()),

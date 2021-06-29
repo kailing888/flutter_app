@@ -1,0 +1,14 @@
+
+#UI系统
+计算机系统中，CPU、GPU和显示器以一种特定的方式协作：CPU将计算好的显示内容提交给 GPU，GPU渲染后放入帧缓冲区，然后视频控制器按照同步信号从帧缓冲区取帧数据传递给显示器显示
+
+Flutter的原理正是如此，它提供了一套Dart API，然后在底层通过OpenGL这种跨平台的绘制库（内部会调用操作系统API）实现了一套代码跨多端
+
+注意，虽然Dart是先调用了OpenGL，OpenGL才会调用操作系统API，但是这仍然是原生渲染，因为OpenGL只是操作系统API的一个封装库，它并不像WebView渲染那样需要JavaScript运行环境和CSS渲染器，所以不会有性能损失。
+
+Flutter中，一切都是Widget，当UI要发生变化时，我们不去直接修改DOM，而是通过更新状态，让Flutter UI系统来根据新的状态来重新构建UI
+
+#Element与BuildContext
+##Element
+从创建到渲染的大体流程是：根据Widget生成Element，然后创建相应的RenderObject并关联到Element.renderObject属性上，最后再通过RenderObject来完成布局排列和绘制。
+
